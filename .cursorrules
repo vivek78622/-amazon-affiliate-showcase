@@ -1,0 +1,133 @@
+# Cursor Rules
+
+## Instructions
+— Record fixes for mistakes or corrections to avoid repetition in the 'Lessons' section.
+— Organize thoughts and plan steps before starting a task in the 'Scratchpad' section.
+— Clear old tasks if necessary.
+— Use todo markers for progress tracking:
+'[X]' Completed tasks
+'[ ]'Pending tasks
+Update Scratchpad after completing subtasks.
+Reflect and plan after milestones for better task management.
+— Always refer to Scratchpad before planning the next step.
+
+## Lessons
+- (Record any lessons learned or fixes here)
+- When installing dependencies for React 19, use --legacy-peer-deps flag to avoid peer dependency issues
+- shadcn-ui package has been renamed to shadcn
+
+## Scratchpad
+- [X] Created Next.js app with TypeScript, Tailwind CSS, ESLint, App Router, src directory, and import alias (@/*)
+
+### Phase 1: Project Setup and Configuration
+- [X] Install and configure additional dependencies:
+  - [X] shadcn-ui (for UI components)
+  - [X] lucide-react (for icons)
+  - [X] zod (for schema validation)
+  - [X] zustand (for state management)
+  - [X] recharts (for analytics charts)
+  - [X] resend (for email)
+  - [X] uploadthing (for file uploads)
+  - [X] prisma (for database ORM)
+  - [X] next-auth@beta (for authentication)
+- [ ] Set up PostgreSQL database
+- [ ] Configure environment variables
+- [ ] Set up Prisma schema and migrations
+- [ ] Configure authentication with next-auth
+- [ ] Set up project structure and folder organization
+
+### Phase 2: Core Features Development
+- [ ] Implement authentication system:
+  - [ ] Admin login
+  - [ ] Role-based access control (Admin only)
+  - [ ] Password reset functionality
+- [ ] Create database models:
+  - [ ] Admin model
+  - [ ] Product model
+    - [ ] Amazon product link
+    - [ ] Product title
+    - [ ] Product description
+    - [ ] Product image
+    - [ ] Price
+    - [ ] Category
+    - [ ] Affiliate tracking ID
+  - [ ] Category model
+  - [ ] Click tracking model (for analytics)
+
+### Phase 3: Customer-Facing Features
+- [ ] Develop homepage and layout:
+  - [ ] Hero section with featured products
+  - [ ] Category navigation
+  - [ ] Search functionality
+  - [ ] Newsletter signup
+- [ ] Implement product catalog:
+  - [ ] Product grid/list view
+  - [ ] Category-based filtering
+  - [ ] Search functionality
+  - [ ] Product cards with:
+    - [ ] Product image
+    - [ ] Title
+    - [ ] Price
+    - [ ] "View on Amazon" button
+    - [ ] Affiliate link tracking
+- [ ] Implement SEO features:
+  - [ ] Product schema markup
+  - [ ] Meta tags
+  - [ ] Sitemap
+  - [ ] Robots.txt
+
+### Phase 4: Admin Dashboard
+- [ ] Create admin layout and navigation
+- [ ] Implement dashboard analytics:
+  - [ ] Click tracking
+  - [ ] Product performance
+  - [ ] Category performance
+  - [ ] Revenue tracking
+- [ ] Develop product management:
+  - [ ] Add/Edit products
+    - [ ] Amazon product link input
+    - [ ] Product details
+    - [ ] Category assignment
+    - [ ] Image upload
+  - [ ] Category management
+  - [ ] Bulk product import/export
+- [ ] Implement affiliate tracking:
+  - [ ] Click tracking
+  - [ ] Revenue reports
+  - [ ] Performance analytics
+
+### Phase 5: Additional Features
+- [ ] Set up email notifications:
+  - [ ] Newsletter subscription
+  - [ ] Marketing emails
+- [ ] Implement file upload system:
+  - [ ] Product images
+  - [ ] Category images
+- [ ] Add SEO optimization:
+  - [ ] Dynamic meta tags
+  - [ ] Product schema markup
+  - [ ] Category pages
+  - [ ] Search optimization
+
+### Phase 6: Testing and Optimization
+- [ ] Write unit tests
+- [ ] Perform integration testing
+- [ ] Conduct performance optimization:
+  - [ ] Image optimization
+  - [ ] Code splitting
+  - [ ] Caching strategies
+- [ ] Implement error handling and logging
+- [ ] Add loading states and animations
+
+### Phase 7: Deployment and Launch
+- [ ] Set up production environment
+- [ ] Configure CI/CD pipeline
+- [ ] Perform security audit
+- [ ] Create backup strategy
+- [ ] Plan launch strategy
+- [ ] Monitor and maintain
+
+### Current Focus
+- [ ] Begin with Phase 1: Project Setup and Configuration
+- [ ] Set up database and authentication
+- [ ] Create initial product and category models
