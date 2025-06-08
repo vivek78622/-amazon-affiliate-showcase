@@ -185,3 +185,25 @@ scoop install gh
 # Or download from https://cli.github.com/
 
 gh auth login
+
+# Database
+DATABASE_URL="postgresql://username:password@localhost:5432/sameweb"
+
+# Authentication
+NEXTAUTH_SECRET="your-secret-key"
+NEXTAUTH_URL="http://localhost:3000"
+
+# Email
+RESEND_API_KEY="your-resend-api-key"
+
+# AWS (for backups)
+AWS_ACCESS_KEY_ID="your-aws-access-key"
+AWS_SECRET_ACCESS_KEY="your-aws-secret-key"
+AWS_BACKUP_BUCKET="your-backup-bucket"
+AWS_REGION="your-aws-region"
+
+# App
+NEXT_PUBLIC_APP_URL="http://localhost:3000"
+
+# Monitoring
+SENTRY_DSN="your-sentry-dsn"
