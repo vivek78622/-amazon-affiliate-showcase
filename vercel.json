@@ -1,11 +1,10 @@
 {
   "version": 2,
   "framework": "nextjs",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm install --legacy-peer-deps && npm run build",
   "installCommand": "npm install --legacy-peer-deps",
   "env": {
     "NODE_ENV": "production",
-    "NEXT_TELEMETRY_DISABLED": "1",
-    "NPM_FLAGS": "--legacy-peer-deps"
+    "NEXT_TELEMETRY_DISABLED": "1"
   }
 } 
