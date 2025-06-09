@@ -470,4 +470,4 @@ model SiteSettings {
   type  String @default("string") // string, number, boolean, json
 
   @@map("site_settings")
-}
+} 

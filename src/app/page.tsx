@@ -1,83 +1,77 @@
-import { NewsletterSignup } from "@/components/newsletter-signup";
-import { Toaster } from "sonner";
+import { motion } from 'framer-motion';
+import CategoryGrid from '@/components/CategoryGrid';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <Toaster position="top-center" />
-      
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="bg-black min-h-screen text-white"
+    >
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
-              <span className="block">Discover Amazing Products</span>
-              <span className="block text-primary">At Great Prices</span>
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-base text-gray-500 dark:text-gray-300 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-              Find the best deals on Amazon products, curated just for you. Save time and money with our handpicked selection.
-            </p>
-          </div>
+      <section className="relative flex flex-col items-center justify-center h-[60vh] bg-gradient-to-br from-black via-gray-900 to-[#00ff88]">
+        <motion.h1
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="text-5xl md:text-7xl font-extrabold text-center neon-text"
+        >
+          Discover the Future of Shopping
+        </motion.h1>
+        <motion.p
+          initial={{ y: 40, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.8, ease: 'easeOut' }}
+          className="mt-6 text-xl md:text-2xl text-center text-gray-300"
+        >
+          7 Categories. Infinite Possibilities.
+        </motion.p>
+      </section>
+
+      {/* Animated Category Grid */}
+      <CategoryGrid />
+
+      {/* Featured Products Carousel Placeholder */}
+      <section className="py-16 px-4 max-w-7xl mx-auto">
+        <div className="bg-gray-900/80 rounded-xl p-8 text-center">
+          <h2 className="text-3xl font-bold mb-4">Featured Products</h2>
+          <p className="text-gray-400">[Carousel coming soon]</p>
         </div>
       </section>
 
-      {/* Featured Products Section - Placeholder */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-8">
-            Featured Products
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Product cards will go here */}
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
-              <p className="text-gray-500 dark:text-gray-400 text-center">
-                Coming soon...
-              </p>
-            </div>
-          </div>
+      {/* Newsletter Signup Placeholder */}
+      <section className="py-16 px-4 max-w-3xl mx-auto">
+        <div className="bg-gray-900/80 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>
+          <p className="text-gray-400 mb-4">Sign up for our newsletter to get the latest deals!</p>
+          <div>[Newsletter Signup coming soon]</div>
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto">
-          <NewsletterSignup />
+      {/* Testimonials Placeholder */}
+      <section className="py-16 px-4 max-w-5xl mx-auto">
+        <div className="bg-gray-900/80 rounded-xl p-8 text-center">
+          <h2 className="text-2xl font-bold mb-4">What Our Customers Say</h2>
+          <p className="text-gray-400">[Testimonials coming soon]</p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-lg font-semibold mb-4">About Us</h3>
-              <p className="text-gray-400">
-                We help you find the best deals on Amazon products, saving you time and money.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">Home</a></li>
-                <li><a href="#" className="hover:text-white">Products</a></li>
-                <li><a href="#" className="hover:text-white">Categories</a></li>
-                <li><a href="#" className="hover:text-white">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Legal</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-white">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white">Affiliate Disclosure</a></li>
-              </ul>
-            </div>
+      {/* Footer Placeholder */}
+      <footer className="bg-gray-950 text-gray-400 py-12 px-4 text-center mt-16">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+          <p className="text-lg font-semibold mb-2">&copy; {new Date().getFullYear()} Your Store. All rights reserved.</p>
+          <div className="flex justify-center gap-6 mt-4">
+            <a href="#" className="hover:text-white transition">Instagram</a>
+            <a href="#" className="hover:text-white transition">Twitter</a>
+            <a href="#" className="hover:text-white transition">Facebook</a>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Your Store Name. All rights reserved.</p>
-          </div>
-        </div>
+        </motion.div>
       </footer>
-    </div>
+    </motion.div>
   );
 }
