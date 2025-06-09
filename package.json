@@ -55,7 +55,6 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.511.0",
-    "@tailwindcss/postcss": "4.1.8",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.57",
